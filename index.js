@@ -11,6 +11,7 @@ const bar2=document.querySelector(".bar2");
 const bar3=document.querySelector(".bar3");
 const bar4=document.querySelector(".bar4");
 
+
 console.log(checkbox);
 // console.log(uppercase);
 checkboxText[0].innerHTML = slider.value;
@@ -82,7 +83,10 @@ function strength(box, slider_value){
 
 }
 
-function error_function() {}
+function error_function() {
+  alert("zort");
+  toastr.info('Are you the 6 fingered man?');
+}
 
 function generate(box, slider_value) {
   bar1.classList.remove("medium","strong","week", "tooWeek");
@@ -134,8 +138,10 @@ checkbox.forEach((box) => {
       box.checked = !box.checked;
       error_function();
     }
-    const filter = check_boxes();
+    else{
+      const filter = check_boxes();
     generate(filter, slider.value);
+    }
   });
 });
 
