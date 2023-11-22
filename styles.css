@@ -1,0 +1,252 @@
+@font-face {
+  font-family: "JetBrains Mono", monospace;
+  src: url("https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap");
+}
+
+body {
+  background-color: #18171f;
+  font-family: "JetBrains Mono", monospace;
+  overflow: hidden;
+  display: grid;
+  place-items: center;
+  min-height: 95svh;
+}
+
+h2 {
+  font-size: 2rem; /* heading l */
+}
+
+p {
+  font-size: 1rem; /* heading m */
+}
+
+.title {
+  color: #817d92;
+  text-align: center;
+}
+
+.out {
+  display: grid;
+  margin: 0 auto;
+  width: 50%;
+  max-width: 800px;
+}
+
+.up {
+  background-color: #24232c;
+  color: #e6e5ea;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 1rem;
+  margin-bottom: 1.5rem;
+}
+
+
+.password {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  border: 1px solid red;
+}
+
+.copy {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  /* transition: all 0.3s ease-in-out; */
+}
+
+.copy:hover {
+  filter: brightness(0) invert(1);
+  /* color: white !important; */
+  /* fill: white !important; */
+}
+
+.down {
+  background-color: #24232c;
+  color: #e6e5ea;
+}
+
+.length {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 1rem;
+  align-items: center;
+}
+
+.length h2 {
+  color: #a4ffaf;
+  font-size: 1.5rem;
+}
+
+.slidecontainer {
+  padding: 1rem;
+}
+
+.slider {
+  width: 100%;
+  border: none !important;
+  border-radius: 0 !important;
+  accent-color: #a4ffaf !important;
+  /* -webkit-appearance: none;*/
+  /* /* width: 100%; */
+  /* height: 15px; */
+  /* border-radius: 5px; */
+  /* background: #d3d3d3; */
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  /* ... */
+  height: 30px;
+  width: 30px;
+  /* background-color: #f50; remove this*/
+  background-image: url("https://ibaslogic.github.io/hosted-assets/smile.png");
+  background-size: cover;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  /* background: #04AA6D !important;  */
+  cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: #18171f !important;
+  cursor: pointer;
+}
+
+.checks {
+  padding: 0 1rem;
+  margin-bottom: 0.5rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.checks label {
+  cursor: pointer;
+}
+
+input[type="checkbox"] {
+  width: 1.5em;
+  height: 1.5em;
+  accent-color: #a4ffaf !important;
+}
+
+.strength {
+  background-color: #18171f;
+  color: #817d92;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1rem;
+  padding: 0 1rem;
+  font-size: 1.5rem;
+}
+.bar {
+  display: flex;
+  align-items: center;
+  gap: 0.2rem;
+}
+
+.bar p {
+  color: #e6e5ea;
+  font-size: 1.5rem;
+  margin-right: 0.4rem;
+}
+
+.st_bar {
+  display: block;
+  width: 0.5rem;
+  height: 1.5rem;
+  border: 1.5px solid #e6e5ea;
+}
+
+.strong{
+  background-color: #a4ffaf;
+  border: none;
+}
+
+.medium{
+  background-color: #F8CD65;
+  border: none;
+}
+
+.week{
+  background-color: #FB7C58;
+  border: none;
+}
+
+.tooWeek{
+  background-color: #F64A4A;
+  border: none;
+}
+
+.defoult{
+  background-color: #18171f;
+  border: 1.5px solid #e6e5ea;
+}
+
+.button {
+  padding: 1rem;
+}
+
+.button button {
+  background-color: #a4ffaf;
+  color: #18171f;
+  width: 100%;
+  font-size: 1.2rem;
+  font-family: "JetBrains Mono", monospace;
+  border: 0;
+  height: 3.5rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.button button:hover {
+  background-color: #18171f;
+  color: #a4ffaf;
+  border: 2px solid #a4ffaf;
+}
+
+@media (max-width: 900px) {
+  .out {
+    width: 70%;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+  p {
+    font-size: 0.8rem;
+  }
+  .bar p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .out {
+    width: 90%;
+  }
+
+  h2 {
+    font-size: 1rem;
+  }
+  p {
+    font-size: 0.5rem;
+  }
+  .bar p {
+    font-size: 0.8rem;
+  }
+  .st_bar {
+    height: 1.2rem;
+  }
+}

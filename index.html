@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Password generator</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+
+  <body>
+    <section class="out">
+      <div class="title">
+        <p>Password Generator</p>
+      </div>
+      <div class="up">
+        <h2 class="password">PTx1f5DaFX</h2>
+        <btn class="copy">
+          <img src="./assets/fa-regular_copy.png" alt="copy img" />
+        </btn>
+      </div>
+      <div class="down">
+        <div class="length">
+          <p>Character Length</p>
+          <h2 class="checkboxvalue">10</h2>
+        </div>
+        <div class="slidecontainer">
+          <input
+            type="range"
+            min="8"
+            max="100"
+            value="50"
+            class="slider"
+            id="myRange"
+          />
+        </div>
+        <section>
+          <div class="checks">
+            <input type="checkbox" class="checks1 inputs" id="uppercase" />
+            <label for="uppercase"> Include Uppercase Letters</label>
+          </div>
+          <div class="checks">
+            <input
+              type="checkbox"
+              class="checks2 inputs"
+              id="lowercase"
+              checked
+            />
+            <label for="lowercase"> Include Lowercase Letters</label>
+          </div>
+          <div class="checks">
+            <input type="checkbox" class="checks3 inputs" id="numbers" />
+            <label for="numbers"> Include Numbers</label>
+          </div>
+          <div class="checks">
+            <input type="checkbox" class="checks4 inputs" id="symbols" />
+            <label for="symbols"> Include Symbols</label>
+          </div>
+        </section>
+        <section class="strength">
+          <p>STRENGTH</p>
+          <div class="bar">
+            <p> </p>
+            <div class="bar1 st_bar"></div>
+            <div class="bar2 st_bar"></div>
+            <div class="bar3 st_bar"></div>
+            <div class="bar4 st_bar"></div>
+          </div>
+        </section>
+        <section class="button">
+          <button>GENERATE →</button>
+        </section>
+      </div>
+    </section>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <script src="./index.js" charset="UTF-8"></script>
+  </body>
+</html>
